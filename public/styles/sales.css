@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1500px;
+    width: 95%;
+    margin: auto;
+}
+
+body{
+    background-color: #eff1f4;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+body .container > *{
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+table{
+    width:100%
+}
+
+table tbody .operation a{
+    margin-left: 10px;
+}
+
+/* Sales/index */
+
+.sales-info {
+    min-height: 620px;
+}
+
+
+.actions-nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions-nav ul li a{
+    display: inline-block;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 0 0 15px;
+}
+
+.actions-nav ul li .sell{
+    background-color: #22BB33;
+}
+
+.actions-nav ul li .price-check{
+    background-color: #5bc0de;
+}
+
+.actions-nav ul li .stock-amount{
+    background-color: #0d6efd;
+}
+
+.sales-table{
+    margin: 50px 0 0;
+    border-collapse: collapse;
+}
+
+.sales-table thead{
+    background-color: #f0f0f0;
+}
+
+.sales-table thead tr th{
+    padding: 10px 5px;
+}
+
+.sales-table tr{
+    text-align: left;
+}
+
+.sales-table tbody tr{
+    border-bottom: 1px dashed rgb(205, 205, 205);
+}
+
+.sales-table tr td{
+    padding: 10px 5px;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233 ,233 ,233,0.6) !important;
+    margin-top: 0 !important;
+    /*display: none;*/
+}
+
+.pop_up{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 2;
+    min-width: 50%;
+    /*display: none;*/
+}
+
+
+form label{
+    display: block;
+    font-weight: 600;
+}
+
+.form-group{
+    margin: 15px 0;
+}
+
+.addBtn,
+.cancelBtn{
+    all: unset;
+    border-radius: 7px;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+.addBtn{
+    background-color: #22BB33;
+    color: #fff;
+    border: 1px solid #22BB33;
+}
+
+.cancelBtn{
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
