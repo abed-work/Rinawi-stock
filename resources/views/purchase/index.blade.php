@@ -18,7 +18,7 @@
 
     <div class="container mt-50">
         <div class="addInvoice">
-            <a class="add_action_style" href="{{ route('invoice.create') }}"><i class="fas fa-plus"></i> Add Purchase</a>
+            <a class="add_action_style" href="{{ route('purchase.create') }}"><i class="fas fa-plus"></i> Add Purchase</a>
         </div>
         <div class="w-bg p-50">
             <h1 style="margin: 10px 0">Purchase</h1>
@@ -75,7 +75,7 @@
                 </tfoot>
             </table>
         </div>
-    </div>
+    </div>  
 
     <script>
         var minDate, maxDate;

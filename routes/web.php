@@ -42,6 +42,7 @@ Route::get('/addprices', function () {
 Route::post('products/json/search',[ProductController::class,'postSearch'])->name('products.search');
 
 Route::get('products/search', [ProductController::class,'search'])->name('product.search');
+
 Route::resource('products', ProductController::class);
 
 Route::resource('category', CategoryController::class);

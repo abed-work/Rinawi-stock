@@ -68,15 +68,15 @@ class ProductController extends Controller
 
         //
         $request->validate([
-            'productName'   => 'required',
-            'modelNumber'   => 'required',
-            'category'      => 'required',
-            'brand'         => 'required',
-            /*'cost'          => 'required',*/
-            /*'whole'         => 'required',*/
-            /*'retail'        => 'required',*/
-            'online'        => 'required',
-            'description'   => 'required',
+            'productName'           => 'required',
+            'modelNumber'           => 'required',
+            'category'              => 'required',
+            'brand'                 => 'required',
+            /*'cost'                => 'required',*/
+            /*'whole'               => 'required',*/
+            /*'retail'              => 'required',*/
+            'online'                => 'required',
+            'description'           => 'required',
         ]);
 
 

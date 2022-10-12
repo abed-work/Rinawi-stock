@@ -39,11 +39,22 @@ class PurchaseController extends Controller
      */
     public function store(Request $request)
     {
+        
         $purchase = Purchase::create([
-            'total'     => ''
+            'total'     => $request->total
         ]);
 
-        dd($request);
+        for ($i=0; $i < count($request->productName) ; $i++) {
+            PurchaseRow::create([
+                'purchase_id'       => $purchase->id,
+                'product_id'        => $request->product_id[i],
+                'product_price'     => $request->product_price[i],
+                'product_quantity'  => $request->productQuantity[i],
+                'total'             => $requestproductTotalPrice[i]
+            ]);
+        }
+
+        return redirect()->route('purchase.index')->with('message','Purchase has been edited successfully!');
     }
 
     /**
